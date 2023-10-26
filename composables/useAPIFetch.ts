@@ -1,4 +1,4 @@
-type useFetchType = typeof useFetch
+type useFetchType = typeof useFetch;
 
 // wrap useFetch with configuration needed to talk to our API
 export const useAPIFetch: useFetchType = (path, options = {}) => {
@@ -8,9 +8,9 @@ export const useAPIFetch: useFetchType = (path, options = {}) => {
 
   options.server = false;
 
-  if (options.params) {
-    options.params = config.public.devToken ? {'dev_token': config.public.devToken, ...options.params} : {...options.params}
+  if (options.params && config.public.devToken) {
+    options.params = { dev_token: config.public.devToken, ...options.params };
   }
 
-  return useFetch(path, options)
-}
+  return useFetch(path, options);
+};
