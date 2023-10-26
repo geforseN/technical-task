@@ -1,5 +1,5 @@
 <template>
-  <unload-block>
+  <UnloadBlock>
     <p v-html="props.taskDate" />
     <p>
       Статус задачи: <span class="text-bold">{{ props.statusText }}</span>
@@ -11,7 +11,7 @@
     <p>
       Размер выгрузки: <span class="text-bold">{{ props.size }}</span>
     </p>
-  </unload-block>
+  </UnloadBlock>
 </template>
 
 <script lang="ts" setup>
