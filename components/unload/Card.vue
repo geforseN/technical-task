@@ -1,8 +1,8 @@
 <template>
   <unload-block>
-    <p v-html="props.task_date" />
+    <p v-html="props.taskDate" />
     <p>
-      Статус задачи: <span class="text-bold">{{ props.status_text }}</span>
+      Статус задачи: <span class="text-bold">{{ props.statusText }}</span>
     </p>
     <p>
       ID выгрузки: <span class="text-bold">{{ props.id }}</span>
