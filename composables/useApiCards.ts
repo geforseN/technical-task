@@ -1,7 +1,7 @@
 export type ApiCard = {
   date: string;
   event: string;
-  id: `${number}`;
+  id: string;
   size: string;
   status: string;
   status_text: string;
